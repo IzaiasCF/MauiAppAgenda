@@ -23,17 +23,14 @@
 
             <Label
                 Text="Sua agenda pessoal"
+                FontFamily="Montserrat"
                 FontSize="Medium"
                 TextColor="NavajoWhite"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Acessar" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+            <Button Text="Avançar" Clicked="Button_Clicked" />
+
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,5 +1,4 @@
-﻿
-namespace MauiAppAgenda
+﻿namespace MauiAppAgenda
 {
     public partial class App : Application
     {
