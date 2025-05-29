@@ -7,22 +7,24 @@
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
             <GradientStop Color="Purple" Offset="0.3" />
-            <GradientStop Color="Red" Offset="1.1" />
+            <GradientStop Color="Blue" Offset="1.1" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
+            Padding="0,50,0,0"
             Spacing="25">
             <Image
                 Source="agenda.png"
-                HeightRequest="185"
+                HeightRequest="200"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
                 Text="Sua agenda pessoal"
+                FontSize="Medium"
+                TextColor="NavajoWhite"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 

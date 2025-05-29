@@ -7,6 +7,7 @@
         public MainPage()
         {
             InitializeComponent();
+            Title = string.Empty; // Remove o "Home"
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
