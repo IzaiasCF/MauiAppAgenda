@@ -29,7 +29,9 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Button Text="Avançar" Clicked="Button_Clicked" />
+            <Button Text="Acessar" Clicked="Button_Clicked"
+                    Padding="10"
+                    Margin="15"/>
 
         </VerticalStackLayout>
     </ScrollView>

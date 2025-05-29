@@ -41,6 +41,49 @@
                              Maximum="10"
                              Increment="1" />
                 </Grid>
+
+                <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout>
+
+                        <Label Text="Escolha o Evento"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Primary}"/>
+
+                        <Picker x:Name="pck_evento"
+                                Title="Selecione o evento"
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Período do Evento"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Primary}"/>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Início:" />
+                            <DatePicker x:Name="dtpck_inicio"
+                                        DateSelected="dtpck_inicio_DateSelected"
+                                        Format="dd/MM/yyyy" />
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Término:" />
+                            <DatePicker x:Name="dtpck_termino"
+                                        Format="dd/MM/yyyy" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Button Text="Avançar" Clicked="Button_Clicked"
+                        Padding="10"
+                        Margin="10"/>
+
             </VerticalStackLayout>
         </Frame>
         
