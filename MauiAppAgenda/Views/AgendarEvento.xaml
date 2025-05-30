@@ -13,6 +13,7 @@
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
+
         <Label 
             Text="Insira o evento"
             FontFamily="Montserrat"
@@ -52,7 +53,19 @@
 
                         <Picker x:Name="pck_evento"
                                 Title="Selecione o evento"
-                                ItemDisplayBinding="{Binding Descricao}"/>
+                                ItemDisplayBinding="{Binding NomeEvento}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout>
+
+                        <Label Text="Local do Evento"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Primary}"/>
+                        <Entry x:Name="txt_local" />
+
                     </VerticalStackLayout>
                 </Frame>
 
@@ -82,7 +95,7 @@
 
                 <Button Text="Avançar" 
                         HorizontalOptions="Center"
-                        Clicked="Button_Clicked" />
+                        Clicked="Button_Clicked_1" />
 
             </VerticalStackLayout>
         </Frame>

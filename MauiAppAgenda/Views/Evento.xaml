@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppAgenda.Views.Evento"
-             Title="Evento"
              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Background>
@@ -14,7 +13,7 @@
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Formatura"
+        <Label Text="Férias"
                TextColor="NavajoWhite"
                FontFamily="Montserrat"
                FontSize="30"
@@ -24,7 +23,7 @@
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Pessoas: "  />
-                    <Label Text="2" TextColor="{StaticResource Primary}" />
+                    <Label Text="{Binding NumeroParticipantes}" TextColor="{StaticResource Primary}" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -36,16 +35,26 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Término" />
                 <Label Grid.Row="0" Grid.Column="2" Text="Local" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="29/05/2025" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2025" />
-                <Label Grid.Row="1" Grid.Column="2" Text="São Paulo, SP" />
+                <Label Grid.Row="1" Grid.Column="0" 
+                       Text="{Binding DataInicio, StringFormat='{}{0:dd/MM/yyy'}"
+                       TextColor="{StaticResource Primary}" />
+                
+                <Label Grid.Row="1" Grid.Column="1" 
+                       Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyy'}"
+                       TextColor="{StaticResource Primary}" />
+
+                <Label Grid.Row="1" Grid.Column="2" 
+                       Text="{Binding LocalEvento}"
+                       TextColor="{StaticResource Primary}" />
+                
             </Grid>
         </Frame>
 
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: " />
-                <Label Text="R$ 250,00" />
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c'}" 
+                       TextColor="{StaticResource Primary}"/>
             </HorizontalStackLayout>
         </Frame>
 

@@ -17,7 +17,7 @@
             Spacing="25">
             <Image
                 Source="agenda.png"
-                HeightRequest="200"
+                HeightRequest="250"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
