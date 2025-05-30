@@ -13,7 +13,13 @@
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Férias"
+        <Image
+                Source="agenda.png"
+                HeightRequest="90"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+        <Label Text="{Binding NomeEvento}"
                TextColor="NavajoWhite"
                FontFamily="Montserrat"
                FontSize="30"
@@ -23,7 +29,8 @@
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Pessoas: "  />
-                    <Label Text="{Binding NumeroParticipantes}" TextColor="{StaticResource Primary}" />
+                    <Label Text="{Binding NumeroParticipantes}" 
+                           TextColor="{StaticResource Primary}" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
         </Frame>
@@ -36,11 +43,11 @@
                 <Label Grid.Row="0" Grid.Column="2" Text="Local" />
 
                 <Label Grid.Row="1" Grid.Column="0" 
-                       Text="{Binding DataInicio, StringFormat='{}{0:dd/MM/yyy'}"
+                       Text="{Binding DataInicio, StringFormat='{}{0:dd/MM/yyy}'}"
                        TextColor="{StaticResource Primary}" />
                 
                 <Label Grid.Row="1" Grid.Column="1" 
-                       Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyy'}"
+                       Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyy}'}"
                        TextColor="{StaticResource Primary}" />
 
                 <Label Grid.Row="1" Grid.Column="2" 
@@ -53,7 +60,7 @@
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: " />
-                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c'}" 
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" 
                        TextColor="{StaticResource Primary}"/>
             </HorizontalStackLayout>
         </Frame>

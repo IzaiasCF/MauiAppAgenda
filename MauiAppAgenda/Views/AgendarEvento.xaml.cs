@@ -6,6 +6,7 @@ public partial class AgendarEvento : ContentPage
     App PropriedadesApp;
     private object pck_local;
     private object pck_local_evento;
+    private DateTime numeroParticipantes;
 
     public AgendarEvento()
 	{
@@ -15,11 +16,15 @@ public partial class AgendarEvento : ContentPage
 
         pck_evento.ItemsSource = PropriedadesApp.lista_evento;
 
+        txt_local.Text = txt_local.Text;
+
         dtpck_inicio.MinimumDate = DateTime.Now;
         dtpck_inicio.MaximumDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month + 1, DateTime.Now.Day);
 
         dtpck_termino.MinimumDate = dtpck_inicio.Date.AddDays(1);
         dtpck_termino.MaximumDate = dtpck_inicio.Date.AddMonths(1);
+
+
 	}
 
     private void dtpck_inicio_DateSelected(object sender, DateChangedEventArgs e)
@@ -59,8 +64,8 @@ public partial class AgendarEvento : ContentPage
          
     }
 
-    private void Button_Clicked_1(object sender, EventArgs e)
+    private async void Button_Clicked_1(object sender, EventArgs e)
     {
-        NavigationPage Evento;
+        await Navigation.PushAsync(new Views.Evento());
     }
 }
