@@ -33,7 +33,7 @@
                     <Label Grid.Row="0" Grid.Column="1"
                            TextColor="{StaticResource Primary}"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stp_adultos}"/>
+                           BindingContext="{x:Reference stp_pessoas}"/>
 
                     <Stepper Grid.Row="0" Grid.Column="2"
                              x:Name="stp_pessoas"
