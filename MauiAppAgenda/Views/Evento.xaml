@@ -19,7 +19,7 @@
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
-        <Label Text="{Binding NomeEvento}"
+        <Label Text="Alaska"
                TextColor="NavajoWhite"
                FontFamily="Montserrat"
                FontSize="30"
@@ -29,7 +29,7 @@
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Pessoas: "  />
-                    <Label Text="{Binding NumeroParticipantes}" 
+                    <Label Text="2" 
                            TextColor="{StaticResource Primary}" />
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
@@ -43,15 +43,15 @@
                 <Label Grid.Row="0" Grid.Column="2" Text="Local" />
 
                 <Label Grid.Row="1" Grid.Column="0" 
-                       Text="{Binding DataInicio, StringFormat='{}{0:dd/MM/yyy}'}"
+                       Text="06/06/2025"
                        TextColor="{StaticResource Primary}" />
                 
                 <Label Grid.Row="1" Grid.Column="1" 
-                       Text="{Binding DataTermino, StringFormat='{}{0:dd/MM/yyy}'}"
+                       Text="20/06/2025"
                        TextColor="{StaticResource Primary}" />
 
                 <Label Grid.Row="1" Grid.Column="2" 
-                       Text="{Binding LocalEvento}"
+                       Text="Alaska"
                        TextColor="{StaticResource Primary}" />
                 
             </Grid>
@@ -60,7 +60,7 @@
         <Frame Margin="10">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: " />
-                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" 
+                <Label Text="R$ 2100,00" 
                        TextColor="{StaticResource Primary}"/>
             </HorizontalStackLayout>
         </Frame>
