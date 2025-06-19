@@ -1,10 +1,12 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MauiAppAgenda"
-             x:Class="MauiAppAgenda.App">
-    
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="MauiAppAgenda.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppAgenda">
+
     <Application.Resources>
+
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
@@ -14,7 +16,7 @@
             <Style TargetType="Label">
                 <Setter Property="VerticalTextAlignment" Value="Center" />
             </Style>
-            
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

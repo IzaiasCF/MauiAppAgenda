@@ -15,9 +15,7 @@
 
         <Image
                 Source="agenda.png"
-                HeightRequest="90"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                HeightRequest="90" />
 
         <Label Text="Alaska"
                TextColor="NavajoWhite"
